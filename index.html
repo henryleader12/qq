@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techplay.com</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(45deg, #d90f3e, #10a190);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1%, rgba(255,255,255,0) 60%);
+            animation: background 10s linear infinite;
+            z-index: -2;
+        }
+
+        @keyframes background {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.5); }
+            100% { transform: translate(0, 0) scale(1); }
+        }
+
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkling 2s infinite ease-in-out;
+        }
+
+        @keyframes twinkling {
+            0%, 100% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        a {
+            color: #00ff7f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="file:///C:/Users/PC/OneDrive/Documents/dghjkl/index.html">About</a>
+        <a href="#services">Services</a>
+        <a href="file:///C:/Users/PC/OneDrive/Documents/vlark/index.html">Contact</a>
+        <a href="file:///C:/Users/PC/OneDrive/Documents/techplay.com/html/demo.html">Sign in</a>
+    </div>
+    <div class="background"></div>
+    <div class="stars">
+        <div class="star" style="top: 10%; left: 20%; width: 2px; height: 2px;"></div>
+        <div class="star" style="top: 50%; left: 80%; width: 3px; height: 3px;"></div>
+        <div class="star" style="top: 30%; left: 50%; width: 1px; height: 1px;"></div>
+        <div class="star" style="top: 70%; left: 30%; width: 4px; height: 4px;"></div>
+        <div class="star" style="top: 20%; left: 70%; width: 2px; height: 2px;"></div>
+        <!-- Add more stars as needed -->
+    </div>
+    <div class="container">
+        <h1>Welcome to My Techplay</h1>
+        <p>Techplay is an immersive gaming platform that offers an unparalleled gaming experience for enthusiasts and casual players alike. As a website dedicated to gaming, Techplay opens up a world of opportunities, allowing users to play popular titles on their laptops. With a focus on the PlayStation ecosystem, Techplay provides access to a diverse range of games, spanning from the classic PS3 titles to the latest and greatest releases on PS4 and even the cutting-edge PlayStation 5.One of the standout features of H.games is its versatility, enabling users to enjoy gaming without the need for a playstation. Through the website, players can seamlessly dive into the captivating worlds of their favorite games directly on their laptops, breaking down barriers and making gaming more accessible than ever before.
+        
+    </div>
+</body>
+</html>
